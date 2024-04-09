@@ -2,13 +2,18 @@
   "name": "@nx-eatright/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "deploy": "nx run eatright-angular:build",
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",
     "@angular/common": "~17.3.0",
     "@angular/compiler": "~17.3.0",
     "@angular/core": "~17.3.0",
+    "@angular/fire": "^16.0.0",
     "@angular/forms": "~17.3.0",
     "@angular/platform-browser": "~17.3.0",
     "@angular/platform-browser-dynamic": "~17.3.0",
@@ -19,7 +24,7 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~17.3.0",
+    "@angular-devkit/build-angular": "^17.0.10",
     "@angular-devkit/core": "~17.3.0",
     "@angular-devkit/schematics": "~17.3.0",
     "@angular-eslint/eslint-plugin": "~17.3.0",
